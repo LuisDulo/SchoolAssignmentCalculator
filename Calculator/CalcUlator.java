@@ -262,26 +262,26 @@ ImageIcon image=new ImageIcon("Calculatorimage.jpg");
                     secondNum = Double.parseDouble(screen.getText().toString());
 
                     switch (operator) {
-                        case 1: // addition
+                        case 1:
                             screen.setText(String.valueOf(firstNum + secondNum));
                             break;
-                        case 2: // subtraction
+                        case 2:
                             screen.setText(String.valueOf(firstNum - secondNum));
                             break;
-                        case 3: // multiplication
+                        case 3:
                             screen.setText(String.valueOf(firstNum * secondNum));
                             break;
-                        case 4: // division
+                        case 4:
                             if (secondNum != 0){
                                 screen.setText(String.valueOf(firstNum / secondNum));
                             }else {
                                 throw new ArithmeticException("Cannot divide by zero");
                             }
                             break;
-                        case 5: // xʸ
+                        case 5:
                             screen.setText(String.valueOf(Math.pow(firstNum, secondNum)));
                             break;
-                        case 6: // ʸ√x
+                        case 6:
                             screen.setText(String.valueOf(Math.pow(firstNum, (1 / secondNum))));
                             break;
                         default:
